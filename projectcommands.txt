@@ -1,0 +1,25 @@
+    1  sudo apt update
+    2  ansible --version
+    3  java --version
+    4  python --version
+    5  jenkins --version
+    6  sudo systemstl status jenkins
+    7  sudo systemctl status jenkins
+    8  sudo apt-get install software-properties-common
+    9  sudo add-apt-repository ppa:deadsnakes/ppa
+   10  sudo apt-cache policy python3
+   11  sudo apt install python3.10.4
+   12  sudo apt install python3
+   13  sudo apt-get install default-jdk
+   14  sudo apt-get install openjdk-8-jdk 
+   15  wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key |sudo gpg --dearmor -o /usr/share/keyrings/jenkins.gpg
+   16  sudo sh -c 'echo deb [signed-by=/usr/share/keyrings/jenkins.gpg] http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+   17  sudo apt update
+   18  sudo apt-get install jenkins
+   19  sudo systemctl start jenkins.service
+   20  sudo systemctl status jenkins
+   21  python3 --version
+   22  java --version
+   23  history
+   24  touch projectcommands.txt
+   25  history > projectcommands.txt
