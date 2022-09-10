@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-07-31T19:15:09.582Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36 Edg/103.0.1264.77" etag="1nqaMHCqSajvwfcJp9qS" version="20.2.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-10T16:02:16.367Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.27" etag="c5FnZvGz27VjPlEQjFdW" version="20.3.0" type="github">
   <diagram id="q7JfhDL1wqtE-B8Oijfw" name="Page-1">
-    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1483" dy="876" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -175,6 +175,11 @@
         <mxCell id="8RewsZUJxXT2QdBr9oqL-62" value="Managed Host" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="660" y="1130" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="hBZ_eq10klPIDl76nWL6-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;dashed=1;strokeWidth=2;fontSize=12;" edge="1" parent="1" source="8RewsZUJxXT2QdBr9oqL-63">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="850" y="1345.4285714285716" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="8RewsZUJxXT2QdBr9oqL-63" value="Managed Host" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="660" y="1315" width="120" height="60" as="geometry" />
         </mxCell>
@@ -236,7 +241,7 @@
           <mxGeometry x="580" y="1110" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="8RewsZUJxXT2QdBr9oqL-85" value="Playbook is a script that outlines configs for each managed host. If host config matches the yaml file, the machine will remain in state." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry y="1490" width="200" height="80" as="geometry" />
+          <mxGeometry x="20" y="1490" width="200" height="80" as="geometry" />
         </mxCell>
         <mxCell id="8RewsZUJxXT2QdBr9oqL-86" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" target="8RewsZUJxXT2QdBr9oqL-71" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -308,8 +313,164 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="wUHydg87RsvV-i0nSzbB-3" value="ssh:&lt;br&gt;PUSH" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="wUHydg87RsvV-i0nSzbB-3" value="ssh:&lt;br&gt;PUSH" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="395" y="1520" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hBZ_eq10klPIDl76nWL6-5" value="Environments " style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="1990" width="140" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="hBZ_eq10klPIDl76nWL6-6" value="Development" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="hBZ_eq10klPIDl76nWL6-5">
+          <mxGeometry y="30" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hBZ_eq10klPIDl76nWL6-7" value="Testing" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="hBZ_eq10klPIDl76nWL6-5">
+          <mxGeometry y="60" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hBZ_eq10klPIDl76nWL6-8" value="Pre-Production/Staging" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="hBZ_eq10klPIDl76nWL6-5">
+          <mxGeometry y="90" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hBZ_eq10klPIDl76nWL6-16" value="Production" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="hBZ_eq10klPIDl76nWL6-5">
+          <mxGeometry y="120" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hBZ_eq10klPIDl76nWL6-21" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="300" y="1910" width="760" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="hBZ_eq10klPIDl76nWL6-1" value="Public Cloud" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="hBZ_eq10klPIDl76nWL6-21">
+          <mxGeometry y="85" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="hBZ_eq10klPIDl76nWL6-2" value="Private Cloud" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="hBZ_eq10klPIDl76nWL6-21">
+          <mxGeometry x="200" y="85" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="hBZ_eq10klPIDl76nWL6-3" value="VMs" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="hBZ_eq10klPIDl76nWL6-21">
+          <mxGeometry x="425" y="95" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hBZ_eq10klPIDl76nWL6-4" value="Physical &lt;br&gt;Server" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" vertex="1" parent="hBZ_eq10klPIDl76nWL6-21">
+          <mxGeometry x="640" y="85" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="hBZ_eq10klPIDl76nWL6-20" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=29;" vertex="1" parent="hBZ_eq10klPIDl76nWL6-21">
+          <mxGeometry y="35" width="760" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hBZ_eq10klPIDl76nWL6-19" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;Hybrid Infrastructure&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="hBZ_eq10klPIDl76nWL6-21">
+          <mxGeometry x="130" y="45.5" width="500" height="19" as="geometry" />
+        </mxCell>
+        <mxCell id="hBZ_eq10klPIDl76nWL6-22" value="Config Management Tasks" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="30" y="2170" width="240" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="hBZ_eq10klPIDl76nWL6-23" value="User Management" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontSize=12;" vertex="1" parent="hBZ_eq10klPIDl76nWL6-22">
+          <mxGeometry y="30" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hBZ_eq10klPIDl76nWL6-24" value="File Management and Permissions" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontSize=12;" vertex="1" parent="hBZ_eq10klPIDl76nWL6-22">
+          <mxGeometry y="60" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hBZ_eq10klPIDl76nWL6-25" value="Pkg Installation/Uninstallation/Upgrades" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontSize=12;" vertex="1" parent="hBZ_eq10klPIDl76nWL6-22">
+          <mxGeometry y="90" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hBZ_eq10klPIDl76nWL6-26" value="Scheduled Backups and Upgrades " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontSize=12;" vertex="1" parent="hBZ_eq10klPIDl76nWL6-22">
+          <mxGeometry y="120" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hBZ_eq10klPIDl76nWL6-27" value="Deployments" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontSize=12;" vertex="1" parent="hBZ_eq10klPIDl76nWL6-22">
+          <mxGeometry y="150" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hBZ_eq10klPIDl76nWL6-28" value="Infrastructure Automation (Terraform)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontSize=12;" vertex="1" parent="hBZ_eq10klPIDl76nWL6-22">
+          <mxGeometry y="180" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hBZ_eq10klPIDl76nWL6-29" value="CM Tools " style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="30" y="2420" width="240" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="hBZ_eq10klPIDl76nWL6-30" value="Puppet" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontSize=12;" vertex="1" parent="hBZ_eq10klPIDl76nWL6-29">
+          <mxGeometry y="30" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hBZ_eq10klPIDl76nWL6-33" value="Salt-stack" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontSize=12;" vertex="1" parent="hBZ_eq10klPIDl76nWL6-29">
+          <mxGeometry y="60" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hBZ_eq10klPIDl76nWL6-31" value="Chef" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontSize=12;" vertex="1" parent="hBZ_eq10klPIDl76nWL6-29">
+          <mxGeometry y="90" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hBZ_eq10klPIDl76nWL6-32" value="Ansible (requires ssh: no ssh, no ansible)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontSize=12;" vertex="1" parent="hBZ_eq10klPIDl76nWL6-29">
+          <mxGeometry y="120" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hBZ_eq10klPIDl76nWL6-34" value="Terraform (used to build infrastructure, &#xa;especially cloud provisioning)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontSize=12;" vertex="1" parent="hBZ_eq10klPIDl76nWL6-29">
+          <mxGeometry y="150" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hBZ_eq10klPIDl76nWL6-35" value="Ansible Controller:&lt;br&gt;Manages Infrastructure" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="830" y="2190" width="170" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="hBZ_eq10klPIDl76nWL6-36" value="Terraform Script:&lt;br&gt;Build Infrastructure" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="430" y="2190" width="170" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="hBZ_eq10klPIDl76nWL6-37" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;entryX=0.55;entryY=0.95;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0;exitDx=70;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="hBZ_eq10klPIDl76nWL6-36" target="hBZ_eq10klPIDl76nWL6-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="650" y="2230" as="sourcePoint" />
+            <mxPoint x="700" y="2180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hBZ_eq10klPIDl76nWL6-38" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;entryX=0.55;entryY=0.95;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0;exitDx=70;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="hBZ_eq10klPIDl76nWL6-36">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="510" y="2150" as="sourcePoint" />
+            <mxPoint x="565" y="2071" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hBZ_eq10klPIDl76nWL6-39" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="hBZ_eq10klPIDl76nWL6-36" target="hBZ_eq10klPIDl76nWL6-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="590" y="2120" as="sourcePoint" />
+            <mxPoint x="575" y="2081" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hBZ_eq10klPIDl76nWL6-40" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;entryX=0;entryY=0;entryDx=70;entryDy=80;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="hBZ_eq10klPIDl76nWL6-36" target="hBZ_eq10klPIDl76nWL6-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="650" y="2230" as="sourcePoint" />
+            <mxPoint x="700" y="2180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hBZ_eq10klPIDl76nWL6-42" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;fillColor=#f8cecc;strokeColor=#b85450;dashed=1;strokeWidth=2;entryX=0.96;entryY=0.7;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0;exitDx=70;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="hBZ_eq10klPIDl76nWL6-35" target="hBZ_eq10klPIDl76nWL6-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="650" y="2230" as="sourcePoint" />
+            <mxPoint x="700" y="2180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hBZ_eq10klPIDl76nWL6-43" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;fillColor=#f8cecc;strokeColor=#b85450;dashed=1;strokeWidth=2;entryX=0.96;entryY=0.7;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0;exitDx=70;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="hBZ_eq10klPIDl76nWL6-35" target="hBZ_eq10klPIDl76nWL6-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="910" y="2200" as="sourcePoint" />
+            <mxPoint x="425.20000000000005" y="2061" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hBZ_eq10klPIDl76nWL6-44" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;fillColor=#f8cecc;strokeColor=#b85450;dashed=1;strokeWidth=2;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="hBZ_eq10klPIDl76nWL6-35" target="hBZ_eq10klPIDl76nWL6-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="910" y="2200" as="sourcePoint" />
+            <mxPoint x="625.2" y="2061" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hBZ_eq10klPIDl76nWL6-45" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;fillColor=#f8cecc;strokeColor=#b85450;dashed=1;strokeWidth=2;entryX=0;entryY=0;entryDx=70;entryDy=80;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="hBZ_eq10klPIDl76nWL6-35" target="hBZ_eq10klPIDl76nWL6-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1150" y="2265" as="sourcePoint" />
+            <mxPoint x="1020" y="2140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hBZ_eq10klPIDl76nWL6-68" value="Types of Managed Hosts" style="swimlane;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="850" y="1105" width="350" height="480" as="geometry" />
+        </mxCell>
+        <mxCell id="hBZ_eq10klPIDl76nWL6-59" value="Physical Infra" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;fontSize=12;" vertex="1" parent="hBZ_eq10klPIDl76nWL6-68">
+          <mxGeometry x="200" y="150" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="hBZ_eq10klPIDl76nWL6-63" value="Containers and Kubelets" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="hBZ_eq10klPIDl76nWL6-68">
+          <mxGeometry x="200" y="270" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hBZ_eq10klPIDl76nWL6-54" value="Windows Servers" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="hBZ_eq10klPIDl76nWL6-68">
+          <mxGeometry x="200" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hBZ_eq10klPIDl76nWL6-53" value="Linux Servers" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="hBZ_eq10klPIDl76nWL6-68">
+          <mxGeometry x="40" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hBZ_eq10klPIDl76nWL6-55" value="VMs Infra" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;fontSize=12;" vertex="1" parent="hBZ_eq10klPIDl76nWL6-68">
+          <mxGeometry x="40" y="150" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="hBZ_eq10klPIDl76nWL6-56" value="Network Devices&lt;br&gt;(e.g. Routers)" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontSize=12;" vertex="1" parent="hBZ_eq10klPIDl76nWL6-68">
+          <mxGeometry x="40" y="270" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hBZ_eq10klPIDl76nWL6-58" value="Cloud Infra" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="hBZ_eq10klPIDl76nWL6-68">
+          <mxGeometry x="40" y="370" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="hBZ_eq10klPIDl76nWL6-57" value="IOT/Embeded-Devices" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="hBZ_eq10klPIDl76nWL6-68">
+          <mxGeometry x="200" y="370" width="120" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
