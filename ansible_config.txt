@@ -1,0 +1,95 @@
+################
+#create controller
+  #set hostname
+  sudo hostnamectl set-hostname {{hostname}}
+  exec bash
+  
+  #install ansible
+  sudo apt update
+  sudo apt install ansible
+  ansible --version
+  
+  #configure hosts file
+  sudo vim /etc/hosts
+    #add the ip addresses of all your inventory
+ 
+#createuser account
+  sudo adduser {{username}}
+    add password and save in separate passwd vault
+
+#switch to root
+  sudo su
+    login
+
+#configure sudoers file
+  vim /etc/sudoers
+    #add the following line
+    {{username}} ALL=(ALL) NOPASSWD:ALL
+    #exit root shell
+
+#switch to {{username}}
+  su - {{username}}
+  
+#configure .ssh_config file
+  sudo vim /etc/ssh/ssh_config
+  #find line Passwordauthentication: no, chnage to yes
+
+#create key
+  ssh-keygen
+  
+#copy and paste key in authorized_keys file
+  vim ~/.ssh/authorized_keys
+
+################
+#create nodes
+  #set hostname
+  sudo hostnamectl set-hostname {{hostname}}
+  exec bash
+  
+  #install ansible
+  sudo apt update
+  sudo apt install ansible
+  ansible --version
+  
+  #configure hosts file
+  sudo vim /etc/hosts
+    #add the ip addresses of all your inventory
+ 
+#createuser account
+  sudo adduser {{username}}
+    add password and save in separate passwd vault
+
+#switch to root
+  sudo su
+    login
+
+#configure sudoers file
+  vim /etc/sudoers
+    #add the following line
+    {{username}} ALL=(ALL) NOPASSWD:ALL
+    #exit root shell
+
+#switch to {{username}}
+  su - {{username}}
+  
+#configure .ssh_config file
+  sudo vim /etc/ssh/ssh_config
+  #find line Passwordauthentication: no, chnage to yes
+
+#################
+#connect to nodes
+  #copy keys to nodes xeach node
+    sudo-copy-id {{username}}@{{hostname}} 
+  #connect to nodes
+    ssh {{username}}@{{hostname}} 
+
+  
+  
+#################  
+# create ansible.cfg file
+#ansible.cfg file
+[default]
+inventory={{inventory_path}}
+log_path=/tmp/{{log-path}}
+remote_user={{remote_user}}
+timeout=20
